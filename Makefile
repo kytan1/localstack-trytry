@@ -31,3 +31,4 @@ fake-submit:
 	aws --endpoint-url ${LOCALSTACK_URL} dynamodb put-item --table-name payment \
 	--item '{"PaymentId": {"S": "3"}, "Description": {"S": "some_desc"}}'
 
+# aws --endpoint-url=http://127.0.0.1:4566 logs tail --region ap-southeast-1  /aws/lambda/dynamodb_stream --follow
